@@ -16,8 +16,8 @@ using namespace cv;
 
 namespace ExtractHelper{
 
-    static path TRAINING_PATH = path("data/train/");
-    static path EVAL_PATH = path("data/eval/");
+    static path TRAINING_PATH = path("../data/train/");
+    static path EVAL_PATH = path("../data/eval/");
 
 	static Ptr<DescriptorMatcher> matcher = DescriptorMatcher::create("FlannBased");
 	static Ptr<DescriptorExtractor> extractor = DescriptorExtractor::create("SURF");
