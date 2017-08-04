@@ -1,8 +1,9 @@
+cmake_minimum_required(VERSION 3.8)
 PROJECT( surf )
 
 set(CMAKE_CXX_FLAGS "-g -Wall")
 
-FIND_PACKAGE( OpenCV REQUIRED )
+FIND_PACKAGE( OpenCV 3.2 REQUIRED )
 FIND_PACKAGE(Boost COMPONENTS filesystem system REQUIRED)
 IF (Boost_FOUND)
     INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIR})
